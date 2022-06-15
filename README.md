@@ -33,10 +33,19 @@ Standoffs - these were used to raise the height of the NFC hat so it could recie
 Case
 The parts i used above were a case of trial and error to fit into the wooden box that i used here https://www.amazon.co.uk/Transomnia-Photo-Straight-Edged-Fram007/dp/B008RA6SCO/ref=asc_df_B008RA6SCO/
 
-There are many ways of delivering this project and i think getting creative with its presentation and housing is the fun thing. You could effectivly house this in all sorts of boxes, old Hi-Fi and even an old irreparible Jukebox that would be really cool!
+There are many ways of delivering this project and i think getting creative with its presentation and housing is the fun thing. You could effectivly house this in all sorts of boxes, old Hi-Fi equipment and even an old irreparible Jukebox that would be really cool!
 
 Software
 
 1. This project relys on the brilliant open source http://phoniebox.de/index-en.html. If you are looking for the latest stable version, use the install script for Raspberry Pi OS Stretch. There is a brilliant tutorial here https://github.com/MiczFlor/RPi-Jukebox-RFID/wiki/INSTALL-stretch
-2. Ensure you follow the particular thread for installing the PN532 Hat. Yoiu can run a test on the install here https://www.waveshare.com/wiki/PN532_NFC_HAT#Raspberry_Pi_examples
+2. I struggled to get the Spotify version working due to lack of time and am currently using MP3/WAV files - would be grateful on any assictance but believe that Phoniebox 3.0 might make this easier
+3. Ensure you follow the particular thread for installing the PN532 Hat. You can run a test on the install here https://www.waveshare.com/wiki/PN532_NFC_HAT#Raspberry_Pi_examples
+4. I used headphones to test the that everything was setup before adding the bluetooth module (this should work straight out of the box via the PI headphone jack as it converts that signal into bluetooth) i found this less complex than changing the audio settings on the PI
+5. Once you have a working example its now time to add the audio files via the web browser. Navigate to the IP address that your PI is on - i logged on to my router and could see the pi was on an adresss that looked like 192.168.1.*** Navigate the the 'Folders/Files' and upload your audio files
+You will now need to link the coasters or whatever it is you are going to use (old cassetes would be fun) with the audio files using the NFC tags. I found that i needed to use the larger 38mm diameter ones to send a strong enoiugh signal through the glass lid. Navigate to the Card/ID tab in the webbrowser tab and pass the tag over the reader, this should display the tag number in the text box. Simply link the tag to the audio file in the dropdown and your box is ready to play with.
 
+Enjoy the Music
+
+Roadmap
+
+1. Please help me get Spotify working
